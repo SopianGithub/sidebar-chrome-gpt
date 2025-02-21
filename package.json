@@ -1,0 +1,43 @@
+{
+  "name": "chrome-ext",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && rollup -c && node export-out.js",
+    "build:css": "postcss src/styles/globals.css -o public/globals.css",
+    "start": "next start",
+    "watch": "nodemon --watch 'pages/**/*' --watch 'src/**/*' --exec 'next build && rollup -c && node export-out.js'",
+    "build:rollup": "rollup -c && node export-out.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.21.1",
+    "@ant-design/icons": "^5.5.1",
+    "@auth/supabase-adapter": "^1.7.3",
+    "antd": "^5.21.6",
+    "next": "^15.1.1-canary.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@types/chrome": "^0.0.280",
+    "@types/node": "22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "rollup": "^4.24.3",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  }
+}
