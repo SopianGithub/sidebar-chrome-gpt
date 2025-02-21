@@ -20,8 +20,8 @@ This project is a Chrome extension built using Next.js. It leverages the power o
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/chrome-ext.git
-   cd chrome-ext
+   git clone https://github.com/SopianGithub/sidebar-chrome-gpt.git
+   cd sidebar-chrome-gpt
    ```
 
 2. **Install dependencies:**
@@ -56,9 +56,9 @@ This will start the Next.js development server and watch for changes.
 
 To build the extension for production, run:
 
-    ```bash
-    npm run build
-    ```
+   ```bash
+   npm run build
+   ```
 
 Or using Yarn:
 
